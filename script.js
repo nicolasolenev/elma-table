@@ -17,11 +17,13 @@ $(function () {
         cell.classList.add('table__cell');
 
         const companyName = cell.cloneNode();
+        companyName.classList.add('table__cell_company');
         companyName.innerText = item.item_name;
         row.append(companyName);
 
         const description = cell.cloneNode();
         description.innerText = item.description;
+        description.classList.add('table__cell_description');
         row.append(description);
 
         const changes = cell.cloneNode();
@@ -35,6 +37,7 @@ $(function () {
         row.append(createdAt);
 
         const employee = cell.cloneNode();
+        employee.classList.add('table__cell_employee');
         employee.innerText = item.created_by_name;
         row.append(employee);
 

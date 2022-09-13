@@ -1,10 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .table {
   border: 1px solid grey;
   border-collapse: collapse;
   table-layout: fixed;
-  width: 100%;
   max-width: 1290px;
   margin: 0 auto;
+}
+
+.table_header {
+  position: fixed;
+  left: calc(50% - 535.5px);
+  top: 0;
+  background-color: #fff;
+}
+
+.table_data {
+  margin: 50px auto;
 }
 
 .table__row:nth-child(odd) {
@@ -18,7 +34,7 @@
 }
 
 .table__cell_company {
-  width: 100px;
+  width: 140px;
 }
 
 .table__cell_description {
@@ -31,7 +47,7 @@
 }
 
 .table__cell_date {
-  width: 80px;
+  width: 100px;
   text-align: center;
 }
 

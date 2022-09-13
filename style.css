@@ -1,0 +1,62 @@
+.table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.table__row:nth-child(odd) {
+  background-color: rgba(199, 199, 199, 0.18);
+}
+
+.table__cell {
+  border: 1px solid grey;
+  padding: 3px 10px;
+  word-wrap: break-word;
+}
+
+.table__cell_company {
+  width: 100px;
+}
+
+.table__cell_description {
+  width: 200px;
+}
+
+.table__cell_changes {
+  width: 500px;
+  padding: 0;
+}
+
+.table__cell_date {
+  width: 80px;
+  text-align: center;
+}
+
+.table__cell_employee {
+  width: 130px;
+}
+
+.table-changes {
+  margin: -1px;
+  border: 2px solid #fff;
+  border: none;
+  width: calc(100% + 2px);
+  margin-left: -1px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+.table-changes_header {
+  display: inline-block;
+  margin: 3px 0;
+}
+
+.table-changes__cell {
+  padding: 3px 10px;
+  word-wrap: break-word;
+  border: 1px solid rgba(128, 128, 128, 0.362);
+  text-align: center;
+}

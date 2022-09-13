@@ -16,7 +16,6 @@ export function createChangesTable(data) {
       itemCopy[2] = getDate(itemCopy[2]);
     }
     const cells = itemCopy.map((cell) => {
-      console.log(typeof cell);
       return `<td class='table-changes__cell'>${cell}</td>`;
     });
     dataRow.innerHTML = cells.join('');
